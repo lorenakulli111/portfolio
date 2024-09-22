@@ -1,0 +1,134 @@
+/* .hidden {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+#display-container {
+  opacity: 1;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 30px;
+}
+
+/* The wipe-away animation to make the text disappear from bottom to top */
+/* .wipe-away {
+  animation: swipe-up 1s forwards;
+}
+
+@keyframes swipe-up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Animating the last word to slide from bottom to top */
+/* #moving-text {
+  position: absolute;
+  bottom: -100%; /* Start off-screen from the bottom */
+/* white-space: nowrap;
+  animation: slide-up 1.5s ease-in forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+} */
+html {
+  scroll-behavior: smooth;
+}
+.about-me {
+  font-size: 32px;
+  color: #555556;
+  padding-left: 14.5rem;
+}
+
+/* .quote {
+  font-size: 18px;
+  margin-bottom: 0rem;
+
+  } */
+/* .home-intro .flex-col:nth-child(2) p {
+    } */
+
+.home-intro .flex-col:nth-child(2) p {
+  max-width: 14em;
+  margin-top: 65px;
+  margin-bottom: 4rem;
+  padding-bottom: 0px;
+}
+.section-help {
+  padding-left: 13rem;
+}
+
+/* styling for 3 colums */
+/* General container styling */
+.row {
+  display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Spaces out columns evenly */
+  align-items: flex-start; /* Aligns items at the top of the container */
+  margin: 20px 0; /* Adds some spacing around the row */
+}
+
+/* Flex column styling */
+.flex-col {
+  flex: 1; /* Ensures each column takes equal space */
+  padding: 20px; /* Adds padding inside each column */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  margin: 0 10px; /* Adds some spacing between columns */
+}
+
+/* Optional: Style for stripe (you can adjust or remove as needed) */
+.stripe {
+  width: 100%;
+  height: 4px;
+  background-color: #333; /* You can change the color to your preference */
+  margin-bottom: 10px;
+}
+
+/* Optional: Additional styling */
+h4,
+p {
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Media Query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stacks the columns vertically on smaller screens */
+  }
+
+  .flex-col {
+    margin: 10px 0; /* Adds some vertical spacing between columns when stacked */
+  }
+}
+
+.Front-end {
+  margin-left: 50rem;
+}
+.arrow {
+  margin-left: 50rem;
+}
+.development {
+  padding-top: 5px;
+}
+
+.home-intro .flex-col:nth-child(2) p {
+  margin-top: 5px;
+}
